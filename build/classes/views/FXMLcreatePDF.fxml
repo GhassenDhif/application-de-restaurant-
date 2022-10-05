@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.FXMLcreatePDFController">
+    <stylesheets>
+        <URL value="@fxmlcreatepdf.css" />
+    </stylesheets>
+   <children>
+      <Button fx:id="addPfdButton" layoutX="150.0" layoutY="113.0" mnemonicParsing="false" onAction="#actionPerformed" text="addPdf" />
+      <TextField fx:id="idz" layoutX="28.0" layoutY="200.0" />
+      <TextField fx:id="titrez" layoutX="204.0" layoutY="200.0" />
+      <TextField fx:id="datez" layoutX="28.0" layoutY="275.0" />
+      <TextField fx:id="panierFKz" layoutX="28.0" layoutY="344.0" />
+      <Label layoutX="204.0" layoutY="174.0" text="titre" />
+      <Label layoutX="28.0" layoutY="174.0" text="id" />
+      <Label layoutX="28.0" layoutY="314.0" text="panierFK" />
+      <Label layoutX="28.0" layoutY="250.0" text="date de commande" />
+      <TextField fx:id="prixz" layoutX="204.0" layoutY="275.0" />
+      <Label layoutX="212.0" layoutY="250.0" text="prix" />
+   </children>
+</AnchorPane>

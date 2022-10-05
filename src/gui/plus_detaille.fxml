@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="838.0" prefWidth="1103.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.Plus_detailleController">
+   <children>
+      <Label layoutX="105.0" layoutY="205.0" prefHeight="27.0" prefWidth="56.0" text="nom">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="90.0" layoutY="268.0" prefHeight="27.0" prefWidth="142.0" text="date_fondationte">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="113.0" layoutY="330.0" text="Local">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="105.0" layoutY="398.0" prefHeight="27.0" prefWidth="195.0" text="Description">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="94.0" layoutY="462.0" prefHeight="27.0" prefWidth="134.0" text="Categorie">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="96.0" layoutY="522.0" prefHeight="27.0" prefWidth="171.0" text="utulisateur">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="tnom" layoutX="339.0" layoutY="203.0" />
+      <JFXTextField fx:id="tut" layoutX="322.0" layoutY="520.0" />
+      <JFXTextField fx:id="tcat" layoutX="322.0" layoutY="460.0" />
+      <JFXTextField fx:id="tdesc" layoutX="322.0" layoutY="396.0" />
+      <JFXTextField fx:id="tlocal" layoutX="332.0" layoutY="328.0" />
+      <JFXTextField fx:id="tdate" layoutX="332.0" layoutY="266.0" />
+      <JFXButton fx:id="back" layoutX="883.0" layoutY="45.0" onAction="#back" prefHeight="31.0" prefWidth="74.0" style="-fx-background-color: red;" text="Back" />
+      <Label layoutX="80.0" layoutY="37.0" text="profil" textFill="#0400ff">
+         <font>
+            <Font size="64.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="im" fitHeight="307.0" fitWidth="355.0" layoutX="670.0" layoutY="128.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="qr" fitHeight="227.0" fitWidth="282.0" layoutX="670.0" layoutY="460.0" pickOnBounds="true" preserveRatio="true" />
+      <JFXButton fx:id="exit" layoutX="990.0" layoutY="45.0" onAction="#close" prefHeight="31.0" prefWidth="74.0" style="-fx-background-color: red;" text="exit" />
+   </children>
+</AnchorPane>

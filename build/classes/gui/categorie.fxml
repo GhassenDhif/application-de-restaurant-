@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="677.0" prefWidth="966.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.CategorieController">
+   <children>
+      <Label layoutX="20.0" layoutY="282.0" prefHeight="21.0" prefWidth="95.0" text="type:" textFill="#05a8eb">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+      <JFXButton contentDisplay="TEXT_ONLY" graphicTextGap="8.0" layoutX="332.0" layoutY="520.0" onAction="#submit" prefHeight="39.0" prefWidth="131.0" ripplerFill="#d3c7c7" style="-fx-background-color: #3F93C6;" text="ajouter" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+         <font>
+            <Font name="Arial Black" size="18.0" />
+         </font></JFXButton>
+      <TableView fx:id="table" cache="true" layoutX="384.0" layoutY="110.0" onMouseClicked="#go_table" prefHeight="319.0" prefWidth="535.0" AnchorPane.topAnchor="110.0">
+        <columns>
+          <TableColumn fx:id="c1" prefWidth="75.0" text="id" />
+          <TableColumn fx:id="c2" prefWidth="75.0" text="type" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <JFXTextField fx:id="txt2" layoutX="93.0" layoutY="282.0" prefHeight="31.0" prefWidth="176.0">
+         <unFocusColor>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="#420cf2" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </unFocusColor></JFXTextField>
+      <JFXButton layoutX="634.0" layoutY="520.0" onAction="#delete" prefHeight="39.0" prefWidth="131.0" ripplerFill="BLACK" style="-fx-background-color: #3F93C6;" text="supprimer">
+         <font>
+            <Font name="Arial Black" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="483.0" layoutY="520.0" onAction="#update" prefHeight="39.0" prefWidth="131.0" style="-fx-background-color: #3F93C6;" text="modifier">
+         <font>
+            <Font name="Arial Black" size="18.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="14.0" layoutY="35.0" prefHeight="53.0" prefWidth="364.0" text="Liste des Catégories" textFill="#05a8eb">
+         <font>
+            <Font name="Tahoma" size="36.0" />
+         </font>
+      </Label>
+      <TextField fx:id="rech" layoutX="606.0" layoutY="57.0" onKeyPressed="#ChercherCentreParType" prefHeight="31.0" prefWidth="303.0" />
+      <JFXButton fx:id="tri" contentDisplay="CENTER" layoutX="778.0" layoutY="517.0" onAction="#tri" prefHeight="39.0" prefWidth="131.0" style="-fx-background-color: #3F93C6;" text="tri">
+         <font>
+            <Font name="Arial Black" size="15.0" />
+         </font></JFXButton>
+      <ImageView fx:id="img" fitHeight="150.0" fitWidth="200.0" layoutX="48.0" layoutY="471.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>
